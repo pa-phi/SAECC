@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class MainpageConfig(AppConfig):
+class ViewstatsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'mainPage'
+    name = 'viewStats'
