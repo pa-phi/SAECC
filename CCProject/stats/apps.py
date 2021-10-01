@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ViewstatsConfig(AppConfig):
+class StatsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'viewStats'
+    name = 'stats'
