@@ -11,10 +11,10 @@ class Team(models.Model):
 class Player(models.Model):
   first_name = models.CharField(max_length=30)
   last_name = models.CharField(max_length=30)
-  team = models.ForeignKey(Team, on_delete=models.SET_NULL, null=True)
+  team = models.ForeignKey(Team, on_delete=models.SET_NULL, related_name="players", null=True)
 
   def __str__(self):
-        return self.name
+    return self.first_name + " " + self.last_name
 
 class Match(models.Model):
   date = models.DateField()
@@ -30,4 +30,4 @@ class Match(models.Model):
     return self.away
 
   def __str__(self):
-        return "match"
+    return "match"
