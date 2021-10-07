@@ -17,3 +17,5 @@ urlpatterns = [
     # Empty path returns endpoint information - GET request
     path('', views.getRoutes),
 ]
+# this is shit code by vinnie
+# PENIs was here
