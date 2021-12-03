@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'stats',
 
     'rest_framework',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -75,7 +76,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'CCProject.wsgi.application'
-
+ASGI_APPLICATION = 'CCProject.asgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases

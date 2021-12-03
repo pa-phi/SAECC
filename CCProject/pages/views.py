@@ -6,4 +6,4 @@ def mainPage(request):
 
 # Create your views here.
 def testPage(request):
-  return render(request, 'test.html')
+  return render(request, 'test.html', context={'text': 'Hello World'})
